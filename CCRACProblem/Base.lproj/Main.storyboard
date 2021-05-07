@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Qj-Ek-lWI">
+                                <rect key="frame" x="147" y="94" width="120" height="34"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="PMV-ID-vBA"/>
+                                    <constraint firstAttribute="height" constant="34" id="wi2-Qr-tJo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FVw-ud-9xF">
+                                <rect key="frame" x="147" y="178" width="120" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="hNF-PS-9Hf"/>
+                                    <constraint firstAttribute="height" constant="34" id="z54-5B-n82"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H1w-Fb-DKB">
+                                <rect key="frame" x="147" y="262" width="120" height="34"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="RFV-uB-Rwz"/>
+                                    <constraint firstAttribute="height" constant="34" id="hgu-6u-p2L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Qj-Ek-lWI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="1mS-4P-p6S"/>
+                            <constraint firstItem="H1w-Fb-DKB" firstAttribute="top" secondItem="FVw-ud-9xF" secondAttribute="bottom" constant="50" id="3SS-H1-uAX"/>
+                            <constraint firstItem="8Qj-Ek-lWI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UgQ-uC-1ak"/>
+                            <constraint firstItem="FVw-ud-9xF" firstAttribute="top" secondItem="8Qj-Ek-lWI" secondAttribute="bottom" constant="50" id="W3f-Xr-1zs"/>
+                            <constraint firstItem="H1w-Fb-DKB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WBQ-ah-k2X"/>
+                            <constraint firstItem="FVw-ud-9xF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XH8-Ot-gX7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField1" destination="8Qj-Ek-lWI" id="DvF-Tg-elY"/>
+                        <outlet property="textField2" destination="FVw-ud-9xF" id="7TJ-KV-xAb"/>
+                        <outlet property="textField3" destination="H1w-Fb-DKB" id="CUM-pg-8f4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-704" y="-5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
